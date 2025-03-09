@@ -1,0 +1,82 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eef;
+  }
+  
+  /* Container holds the characters and the plane */
+  .container {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  /* Positioning for the characters */
+  .character {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+  }
+  .boy {
+    left: 20px;
+  }
+  .girl {
+    right: 20px;
+  }
+  
+  /* Paper plane setup */
+  #paperPlane {
+    position: absolute;
+    width: 50px;
+    /* Start position near the boy's hand */
+    left: 70px;
+    bottom: 80px;
+    opacity: 0; /* hidden until animation starts */
+  }
+  
+  /* Styling for buttons */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  /* Keyframes for Upload Animation (boy → girl) */
+  @keyframes uploadAnim {
+    0% {
+      left: 70px;
+      bottom: 80px;
+      opacity: 1;
+    }
+    50% {
+      /* Mid-flight curve: adjust these values to fine-tune the arc */
+      left: 275px;
+      bottom: 150px;
+    }
+    100% {
+      left: 480px;
+      bottom: 80px;
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for Download Animation (girl → boy) */
+  @keyframes downloadAnim {
+    0% {
+      left: 480px;
+      bottom: 80px;
+      opacity: 1;
+    }
+    50% {
+      left: 275px;
+      bottom: 150px;
+    }
+    100% {
+      left: 70px;
+      bottom: 80px;
+      opacity: 1;
+    }
+  }
+  
