@@ -88,7 +88,7 @@ Get SkyShare running locally in minutes.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/SkyShare.git
+    git clone https://github.com/Anvi1312/SkyShare.git
     cd SkyShare
     ```
 
